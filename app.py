@@ -10,7 +10,7 @@ import os
 
 from flask import Flask, Response, abort, redirect, render_template, request, url_for
 
-   app = Flask(__name__, template_folder='.', static_folder='.')
+app = Flask(__name__, template_folder='.', static_folder='.')
 
 # --------------------------------------------------------------------------
 # 1. Configuration (lue dans les variables d'environnement, jamais dans le code)
