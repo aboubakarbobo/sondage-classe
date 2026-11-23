@@ -178,7 +178,7 @@ def export_csv():
     )
 
 
-@app.route("/sante")
+@app.route('/sante')
 def sante():
     """Page de diagnostic : l'application voit-elle sa base ?"""
     try:
