@@ -8,7 +8,7 @@ import hmac
 import io
 import os
 
-from flask import Flask, render_template, request, redirect, url_for, Response
+from flask import Flask, render_template, request, Response, abort
 
 app = Flask(__name__, template_folder='.', static_folder='.', static_url_path='')
 
