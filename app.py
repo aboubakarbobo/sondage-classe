@@ -186,7 +186,7 @@ def sante():
         n = executer("SELECT COUNT(*) FROM reponses", lire=True)[0][0]
         return {"statut": "ok", "base": "postgresql" if USE_PG else "sqlite", "reponses": n}
     except Exception as e:                         # affichage pédagogique
-        return {"statut": "erreur", "detail": type(e).__name__}, 500
+        return {"statut": "erreur", "detail": str(e)}, 500
 
 
 def listes():
