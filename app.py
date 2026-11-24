@@ -12,6 +12,10 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify, s
 
 app = Flask(__name__, template_folder='.', static_folder='.', static_url_path='')
 
+@app.route('/style.css')
+def style():
+    return send_from_directory('.', 'style.css', mimetype='text/css')
+
 # --------------------------------------------------------------------------
 # 1. Configuration (lue dans les variables d'environnement, jamais dans le code)
 # --------------------------------------------------------------------------
